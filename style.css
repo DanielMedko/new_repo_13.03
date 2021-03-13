@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(65, 63, 63);
+    background-size: 100%;
+}
+.background{
+    background-color: rgb(255, 254, 253);
+    padding: 10px;
+    font-size: 15pt;
+    margin-right: -34px;
+}
+h1{
+    text-align: center;
+    color: rgb(60, 69, 75); 
+    padding: -5px;
+    font-size: 20pt;
+}
+.button{
+    border-radius: 4px;
+    background-color: rgb(139, 139, 139); 
+    border: none;
+    color: aliceblue;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 600px;
+    transform: all 0.5s;
+    cursor: pointer;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transform:  0.5s;
+}
+.button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span{
+    padding-right: 25px;
+}
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(242, 250, 255); 
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+}
